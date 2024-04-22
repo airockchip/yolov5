@@ -22,7 +22,7 @@ jobs:
         model: [ yolov5n ]
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       #- name: Cache pip
@@ -76,7 +76,7 @@ jobs:
             torch: '1.7.0'  # min torch version CI https://pypi.org/project/torchvision/
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       - name: Get cache dir
